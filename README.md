@@ -1,6 +1,6 @@
 # Twilio-Contact Form
 
-AI relays SMS text messages from from your Website form 
+A.I. relays SMS text messages from your Website form 
  
 # Installation
 To install this project, clone the repository from GitHub:
