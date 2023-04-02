@@ -9,7 +9,7 @@ git clone https://github.com/theoccultcorner/Twilio-SMS.git
 ```
 Then, navigate to the project directory and install the dependencies using npm:
 ```bash
- cd Twilio-SMS
+ cd GPT-Contact-Form
 
  npm install
 
