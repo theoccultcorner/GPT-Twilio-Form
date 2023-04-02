@@ -1,44 +1,71 @@
-# OpenAI API Quickstart - Node.js example app
+# Twilio-SMS
+Receive SMS text messages from your Website form
+ 
+# Installation
+To install this project, clone the repository from GitHub:
+```bash
+git clone https://github.com/theoccultcorner/Twilio-SMS.git
+```
+Then, navigate to the project directory and install the dependencies using npm:
+```bash
+ cd Twilio-SMS
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://platform.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+ npm install
 
-![Text box that says name my pet with an icon of a dog](https://user-images.githubusercontent.com/10623307/213887080-b2bc4645-7fdb-4dbd-ae42-efce00d0dc29.png)
+ npm start
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Usage
+Before you can use this project, you will need to set up a Twilio account and obtain your Account SID and Auth Token. You will also need to purchase a phone number from Twilio that you can use to send SMS messages.
 
-## Setup
+Once you have your Twilio account set up, rename the .env.example file to .env in the project directory and add your Account SID, Auth Token, and phone numbers:
 
-1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
+ 
+```bash
+.env.example
 
-2. Clone this repository
+to
 
-3. Navigate into the project directory
+.env
+```
+Then fill out your information.
+```
+* TWILIO_ACCOUNT_SID=<your_account_sid>
 
-   ```bash
-   $ cd openai-quickstart-node
-   ```
+* TWILIO_AUTH_TOKEN=<your_auth_token>
 
-4. Install the requirements
+The phone number where you want to receive messages
 
-   ```bash
-   $ npm install
-   ```
+* TO_PHONE_NUMBER= <your_phone_number>
 
-5. Make a copy of the example environment variables file
+* TWILIO_PHONE_NUMBER=<your_twilio_phone_number>
 
-   On Linux systems: 
-   ```bash
-   $ cp .env.example .env
-   ```
-   On Windows:
-   ```powershell
-   $ copy .env.example .env
-   ```
-6. Add your [API key](https://platform.openai.com/account/api-keys) to the newly created `.env` file
+* OPENAI_API_KEY="Your Key"
+```
+Contributing
+If you find a bug or have an idea for a new feature, feel free to open an issue or submit a pull request.
 
-7. Run the app
+ MIT License
 
-   ```bash
-   $ npm run dev
-   ```
+ Copyright (c) 2023 TheOccultCorner
+  
+ [http:/nevarezmarketing.com](http://nevarezmarketing.com)
 
-You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://platform.openai.com/docs/quickstart).
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
